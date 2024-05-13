@@ -2,6 +2,7 @@
 
 // routes for custom authentications
 
+````php
 Route::get('/custom_register', [CustomController::class, 'custom_register'])->name('custom_register.view');
 Route::post('/custom_register', [CustomController::class, 'custom_registerPost'])->name('custom_registerPost');
 Route::get('/custom_login', [CustomController::class, 'custom_login'])->name('custom_login.view');
@@ -10,6 +11,8 @@ Route::post('/custom_login', [CustomController::class, 'custom_loginPost'])->nam
 ## CustomController
 
 ###
+
+```php
 
 <?php
 
@@ -82,3 +85,4 @@ class CustomController extends Controller
     }
 
 }
+````
